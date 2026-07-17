@@ -54,11 +54,11 @@ Backend реализован на FastAPI, фронтенд — на HTML/CSS/Ja
 
 ## Инструкция по запуску
 
-1. Выполняем `git clone ...`;
-2. Переходим в проект `cd ...`;
+1. Выполняем `git clone https://github.com/AlexandrSmolyachkovGH/test-5elem.git`;
+2. Переходим в проект `cd test-5elem`;
 3. Регистрируемся в https://openrouter.ai/ и сохраняем локально API ключ;
 4. Создаем .env файл `cp .env.example .env` и добавляем в него API ключ из прошлого пункта в переменную `LLM_API_KEY`;
-5. Билдим проект `docker compose up -d --build`;
+5. Билдим проект `docker compose build && docker compose up -d`;
 6. В браузере открываем http://localhost.
 
 ---
